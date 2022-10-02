@@ -1,0 +1,7 @@
+image:
+  # with some custom stuff
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: start the exercise
+    command: sudo service apache2 start
