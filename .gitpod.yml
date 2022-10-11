@@ -1,7 +1,8 @@
-image:
-  # with some custom stuff
-  file: .gitpod.Dockerfile
+# multi-stage build custom image to hide the scenario setup
+image: leskis/sadpod-webserver-base:latest
 
 tasks:
   - name: start the exercise
+    # get rid of the obvious evidence
+    init: sudo /etc/init.d/setup && sudo rm /etc/init.d/setup
     command: sudo service apache2 start
