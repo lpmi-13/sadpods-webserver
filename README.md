@@ -1,6 +1,6 @@
 # Sadpod broken webserver
 
-Inspired by the excellent [Sad Servers](https://sadservers.com), this is an implementation of the "Tokyo" scenario, where a webserver is serving `index.html` from `127.0.0.1:80`, but it's not available.
+Inspired by the excellent [Sad Servers](https://sadservers.com), this is an implementation of the "Tokyo" scenario, where a webserver is serving `index.html` from `127.0.0.1:80` (as well as `localhost:80`), but it's not available.
 
 ## Running in Gitpod
 
@@ -10,14 +10,20 @@ This is a great use case for running an exercise in Gitpod, since the custom Doc
 
 ## The task
 
-There's a webserver trying to serve content at `127.0.0.1:80`, but it's not currently working. See if you can fix it!
+There's a webserver trying to serve content at `127.0.0.1:80` (and `localhost:80`), but it's not currently working. See if you can fix it!
 
 ## Checking your solution
 
-When you can successfully run
+When you can successfully run either:
 
 ```
 curl 127.0.0.1:80
+```
+
+or
+
+```
+curl localhost:80
 ```
 
 and see
